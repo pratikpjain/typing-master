@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <title>Typing Master</title>
+</head>
+<body>
+    <div class= "hd" >Typing Master</div> 
+    <div class = "flex-box">
+    <div class = "head">Word To Be Typed</div> 
+    <div class = "head">Last Word Typed</div>
+    </div>
+    <div class = "flex-box">
+    <div class = "text" id = "text_id">
+    </div>
+    <div class = "text text1" id = "last_word">
+    </div>
+    </div>
+    <div class = "grid-item">
+    <div class = "input">
+        <input type = "text"  id = "input_id" name = "val" placeholder = "type word shown in box">
+    </div>
+    <div class = "time" id = "time_id">
+        1:00
+    </div>
+    <div class = "ref">
+        <button onclick="refresh();"><img src = "refreshimg.png" alt = "refresh" ></button>
+    </div>
+    </div>
+    <br><button class = "btn" id = 'correct'>Correct Words : 0</button>
+    <button class = "btn" id = 'wrong'>Wrong Words : 0</button>
+    <div class="result">
+        <div class="result1">
+            RESULT
+        </div>
+        <div class = "sm speed">
+            <span class = "res"><span id = "rest">0</span> WPM</span><br>
+            (words per 1 minute)
+        </div>  
+        <div class = "grid-ele">
+        <div class = "wh gr">
+        <span class = "left">Keystrokes</span> <span class = "right" id = "keystrokes">0</span>
+        </div>
+        <div class = "sm gr">
+        <span class = "left">Accuracy</span> <span class = "right" id = "accuracy">0 %</span>
+        </div>
+        <div class = "wh gr">
+        <span class = "left">Correct Words</span> <span class = "right" id = "corr">0</span>
+        </div>
+        <div class = "sm gr">
+        <span class = "left">Wrong Words</span> <span class = "right" id = "wrg">0</span>
+        </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
